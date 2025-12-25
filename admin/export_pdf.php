@@ -22,6 +22,7 @@ $html = '
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+    margin: 30px;
     color: #333;
 }
 
@@ -58,6 +59,7 @@ body {
 
 .table td {
     border: 1px solid #ccc;
+    word-wrap: break-word;
     padding: 7px;
     font-size: 11px;
 }
@@ -80,6 +82,9 @@ body {
     text-align: right;
     font-size: 10px;
     color: #666;
+    position: fixed;
+    bottom: 0;
+    right: 30px;
 }
 </style>
 </head>
@@ -114,7 +119,7 @@ while($r = mysqli_fetch_assoc($q)){
         <td align='center'>
             <span class='status {$r['status']}'>{$r['status']}</span>
         </td>
-        <td>{$r['tanggal_lapor']}</td>
+        <td>".date('d-m-Y', strtotime($r['tanggal_lapor']))."</td>
     </tr>";
     $no++;
 }
