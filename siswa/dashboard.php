@@ -40,6 +40,7 @@ $data = mysqli_query($conn, "
         <p>Silakan klik <b>+ Laporan</b> untuk membuat laporan baru</p>
     </div>
 <?php else: ?>
+    <div class="table-wrapper">
 <table>
     <tr>
         <th>Judul</th>
@@ -67,6 +68,7 @@ $data = mysqli_query($conn, "
     </tr>
     <?php } ?>
 </table>
+        </div>
 <?php endif; ?>
 
 
