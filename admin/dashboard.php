@@ -32,7 +32,8 @@ $data = mysqli_query($conn, "
         📄 Export PDF
     </a>
 <h2>Daftar Laporan Masuk</h2>
-
+    
+<div class="table-wrapper">
 <table>
 <tr>
     <th>Pelapor</th>
@@ -61,6 +62,7 @@ $data = mysqli_query($conn, "
 <?php } ?>
 
 </table>
+</div>
 </div>
 </div>
 
