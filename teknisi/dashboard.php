@@ -31,6 +31,7 @@ $data = mysqli_query($conn, "
     <div class="card">
         <h2>Laporan Sedang Diproses</h2>
 
+        <div class="table-wrapper">
         <table>
             <tr>
                 <th>Pelapor</th>
@@ -54,6 +55,7 @@ $data = mysqli_query($conn, "
             </tr>
             <?php } ?>
         </table>
+            </div>
 
     </div>
 </div>
